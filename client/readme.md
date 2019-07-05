@@ -19,3 +19,4 @@ Les composants sont stockés dans les dossiers qui sont nommés de meme manière
 
 
 #NOTE :  dernier  commit 8916b76003154882a8636315b22843f12bad0294  - je vais faire une pause ;)
+#NOTE :  dernier  reprise ;)
