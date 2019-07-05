@@ -16,3 +16,6 @@ Je ne conaissais pas GraphQL et Appollo - je viens de régarder une petite vidé
 #NOTE 3
 
 Les composants sont stockés dans les dossiers qui sont nommés de meme manière et chaque composant est dans index.js - neanmoins ce n'est juste mon choix, il y en a d'autres choix ou led développeurs nomment les composants diferrement (card-custom.js etc..)
+
+
+#NOTE :  dernier  commit 8916b76003154882a8636315b22843f12bad0294  - je vais faire une pause ;)
