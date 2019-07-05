@@ -6,7 +6,10 @@ import Chip from '@material-ui/core/Chip';
 
 const useStyles = makeStyles({
   chip: {
-    padding: '5px 10px'
+    padding: '0px 10px',
+    fontSize: '0.7rem',
+    height: '23px',
+    width: '80px'
   },
 });
 

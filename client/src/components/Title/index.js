@@ -3,8 +3,13 @@ import { makeStyles } from '@material-ui/styles';
 
 const useStyles = makeStyles(theme => ({
   titleStyle: {
-    fontSize: '4rem',
-    color: 'rgba(255,255,255, 1)'
+    fontSize: '2.7rem',
+    lineHeight: '2.3rem',
+    color: 'rgba(255,255,255, 1)',
+    textTransform: 'uppercase',
+    overflow: 'hidden',
+    textOverflow: 'ellipsis',
+    width: 'calc(100% - 40px)'
   }
 }));
 

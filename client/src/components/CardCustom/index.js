@@ -13,11 +13,11 @@ import Card from '@material-ui/core/Card';
 
 const styles = theme => ( {
   card: {
-    width: '250px',
-    display: 'inline-block',
-    marginRight: '10px',
+    minWidth: '270px',
+    margin: '15px',
     height: '400px',
     position: 'relative',
+    boxSizing: 'border-box',
     '& img': {
       position: 'absolute',
       zIndex: '1'
@@ -31,8 +31,8 @@ const styles = theme => ( {
     '& h2': {
       position: 'absolute',
       zIndex: '2',
-      left: '20px',
-      bottom: '40px'
+      bottom: '40px',
+      left: '20px'
     }
   },
 

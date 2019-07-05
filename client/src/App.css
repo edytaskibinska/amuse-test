@@ -1,10 +1,36 @@
 /*TODO*/
 .App {
-    padding: 20px;
+    padding: 50px 20px 20px 20px;
     overflow: hidden;
 }
+.card-slider-wrapper {
+    display: flex;
+    position: absolute;
+}
 
-.container {
-   
+.card-slider {
+    position: relative;
+    max-width: 226px;
+    margin: 0 auto;
+    height: 420px;
+}
 
+.card-slider:after {
+    outline: 1px solid rgba(1,147,243);
+    content: '';
+    display: block;
+    width: 100%;
+    min-width: 270px;
+    height: 400px;
+    margin: 15px;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+}
+.card-slider-wrapper {
+}
+
+.CardCustom-card-36 {
+    /* flex: 1; */
 }
