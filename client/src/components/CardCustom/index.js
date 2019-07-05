@@ -13,14 +13,25 @@ import Card from '@material-ui/core/Card';
 
 const styles = theme => ( {
   card: {
-    minWidth: '270px',
+    width: '260px',
     margin: '15px',
     height: '400px',
     position: 'relative',
     boxSizing: 'border-box',
+    transition: 'width .3s ease',
     '& img': {
       position: 'absolute',
       zIndex: '1'
+    },
+    '&:hover': {
+      width: '300px',
+      height: '440px',
+      marginTop: '-5px',
+      transition: 'width .3s ease',
+      '& h2': {
+        fontSize: '3rem',
+        transition: 'font-size .3s ease',
+      }
     },
     '& .MuiChip-root': {
       position: 'absolute',
@@ -32,7 +43,8 @@ const styles = theme => ( {
       position: 'absolute',
       zIndex: '2',
       bottom: '40px',
-      left: '20px'
+      left: '20px',
+      transition: 'font-size .3s ease',
     }
   },
 
