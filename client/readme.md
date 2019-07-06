@@ -24,4 +24,12 @@ Les composants sont stockés dans les dossiers qui sont nommés de meme manière
 
 #NOTE 4
 
-Les tags n'ont pas de couleurs => je propose de les afficher dynamiquement avec swich case (si ce n'est pas fait c'est a cause de manque de temps)
+Les tags n'ont pas de couleurs => je propose de les afficher dynamiquement avec swich case (si ce n'est pas fait c'est a cause de manque de temps), afficher le background-color n'est pas un soucic - le sujet ici c'est de le dynamiser.
+
+#NOTE 5
+
+Tests avec JEST : j'ai un petit problème avec les depensances et je n'ai plus de temps aujourd'hui pour travailler dessus
+Je n'ai pas fait beaucoup de tests unitaires avec Jest mais j'ai regardée la documentation - c'est pas très compliqué.
+
+
+#NOTE 6 :: Je vous souhaiute un von review et merci pour votre atttention passé sur ce test.

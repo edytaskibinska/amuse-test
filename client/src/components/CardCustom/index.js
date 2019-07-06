@@ -2,14 +2,13 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
 
+//MUI components
+import Card from '@material-ui/core/Card';
 
 //custom components
 import Title from  '../Title'
 import Image from  '../Image'
 import Tag from '../Tag';
-
-//MUI components
-import Card from '@material-ui/core/Card';
 
 const styles = theme => ( {
   card: {
@@ -47,7 +46,6 @@ const styles = theme => ( {
       transition: 'font-size .3s ease',
     }
   },
-
 });
 
 class CardCustom extends Component {

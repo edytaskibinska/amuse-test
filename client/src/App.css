@@ -1,43 +1,43 @@
 /*TODO*/
 .App {
-    padding: 50px 20px 20px 20px;
-    overflow: hidden;
-    margin: 0 auto;
-    max-width: 1500px;
+  padding: 50px 20px 20px 20px;
+  overflow: hidden;
+  margin: 0 auto;
+  max-width: 1500px;
 
 }
 .card-slider-wrapper {
-    display: flex;
-    position: absolute;
+  display: flex;
+  position: absolute;
 }
 
 .card-slider {
-    padding: 30px 0;
-    position: relative;
-    height: 460px;
-    width: 100%;
-    overflow: hidden;
+  padding: 30px 0;
+  position: relative;
+  height: 460px;
+  width: 100%;
+  overflow: hidden;
 }
 
 
 .pagination {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: rgba(0, 68, 102, 1)
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(0, 68, 102, 1)
 }
 .pagination svg {
-    position: relative;
-    width: 18px;
-    top: -3px
+  position: relative;
+  width: 18px;
+  top: -3px
 }
 
 .previous,
 .next {
-    cursor: pointer;
-    border: 1px solid rgba(0, 68, 102, 1);
-    border-radius: 50%;
-    width: 20px;
-    height: 20px;
-    margin: 0 30px;
+  cursor: pointer;
+  border: 1px solid rgba(0, 68, 102, 1);
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  margin: 0 30px;
 }

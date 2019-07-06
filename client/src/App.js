@@ -30,7 +30,12 @@ class App extends Component {
   constructor(props){
     super(props);
     //les elements sont statiques - normalement ils doivet etre synchronisés via graphql
-    //encore a repenser
+    //donc a refaire proprement
+
+    //STATE : 
+    //transform : calcule le défilement de carosussel
+    //interval : calcule le dévilement tous les 5 élements
+    //element : series.length - nombre d'élements (doit atre dynamiqué - appellé de graphql)
     this.state = {
       transform: 0,
       interval: 5,
@@ -38,6 +43,7 @@ class App extends Component {
     }
   }
 
+  //fonction executé au click du bouton next - fais defiler les séries
   nextSerie = () => {
     const {transform, elements, interval} = this.state;
     this.setState({
@@ -46,7 +52,7 @@ class App extends Component {
     })
     console.log(transform)
   }
-
+ //fonction executé au click du bouton previous - fais defiler les séries
   prevSerie = () => {
     const {transform, elements, interval} = this.state;
     this.setState({
@@ -68,10 +74,6 @@ class App extends Component {
             if (error) return <div>Error</div>
 
             const { series } = data;
-            console.log(series);
-            console.log(data);
-            console.log(series.id);
-            console.log(series.length);
 
             return (
               <section className="container">
@@ -86,7 +88,7 @@ class App extends Component {
                         graphic={serie.banner_url}
                         cardTitle = {serie.title}
                         tagTitle = {serie.tag}
-                        //avec switch case on peut dynamiquement afficher des couleurs des tags -> case APP : couleur jaune, case ASSET : couleur rouge etc
+                        //avec switch case on peut dynamiquement afficher le background-color des tags -> case APP : couleur jaune, case ASSET : couleur rouge etc
                         tagColor = {serie.tag}
                       />
                     ))}
