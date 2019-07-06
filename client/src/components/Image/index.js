@@ -3,7 +3,10 @@ import { makeStyles } from '@material-ui/styles';
 
 const useStyles = makeStyles(() => ({
   imageStyled: {
-    height: '100%'
+    height: '100%',
+    '&:empty':{
+      left: '-64px',
+    }
   }
 }));
 

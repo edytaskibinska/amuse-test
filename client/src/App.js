@@ -32,14 +32,17 @@ class App extends Component {
     //les elements sont statiques - normalement ils doivet etre synchronisés via graphql
     //donc a refaire proprement
 
-    //STATE : 
+    //NOTE importante : 
     //transform : calcule le défilement de carosussel
     //interval : calcule le dévilement tous les 5 élements
     //element : series.length - nombre d'élements (doit atre dynamiqué - appellé de graphql)
+    //les chiffres dans le state et dans le calcul dans nextSerie et prevSerie sont fausses
+    //Il faut les dynamiser car a chaque ajout de nouveau élement l'algorithme va changer
+    //mon souci ici ce que je ne sais pas comment accèder ai series.length et je n'ai pas beaucoup de temps pour creuser
     this.state = {
       transform: 0,
       interval: 5,
-      elements: 38
+      elements: 20
     }
   }
 
@@ -48,7 +51,7 @@ class App extends Component {
     const {transform, elements, interval} = this.state;
     this.setState({
       interval: interval <= elements ? interval + 5 : elements,
-      transform : transform + 4*(100/elements)
+      transform : transform + 4.27*(100/elements)
     })
     console.log(transform)
   }
@@ -57,7 +60,7 @@ class App extends Component {
     const {transform, elements, interval} = this.state;
     this.setState({
       interval: interval - 5,
-      transform : transform - 4*(100/elements)
+      transform : transform - 4.27*(100/elements)
     })
     console.log(transform)
   }
@@ -80,7 +83,8 @@ class App extends Component {
                 <div className={`card-slider  active-slide-${series.id}`}>
                   <div className="card-slider-wrapper" style={{
                     'transform': `translateX(-${transform}%)`,
-                    'width': `calc(340*${series.length}px`
+                    'width': `calc(340*${series.length}px`,
+                    'transition' : `transform .6s ease`
                   }}>
                     {series.map(serie => (
                       <CardCustom

@@ -20,7 +20,8 @@ const styles = theme => ( {
     transition: 'width .3s ease',
     '& img': {
       position: 'absolute',
-      zIndex: '1'
+      zIndex: '1',
+      transition: 'all .3s ease',
     },
     '&:hover': {
       width: '300px',
@@ -30,6 +31,15 @@ const styles = theme => ( {
       '& h2': {
         fontSize: '3rem',
         transition: 'font-size .3s ease',
+      },
+      '& img': {
+        height: 'calc(100% + 40px)',
+        marginTop: '-20px',
+        marginBottom: '-20px',
+        transition: 'all .3s ease',
+        '&:empty': {
+          left: '-84px'
+        }
       }
     },
     '& .MuiChip-root': {
