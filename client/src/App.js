@@ -29,7 +29,7 @@ const SERIES_QUERY = gql`
 class App extends Component {
   constructor(props){
     super(props);
-    //les elements sont statiques - normalement ils doivent etre synchronisés via graphql
+    //les elements sont statiques - normalement ils doivet etre synchronisés via graphql
     //encore a repenser
     this.state = {
       transform: 0,
@@ -55,6 +55,8 @@ class App extends Component {
     })
     console.log(transform)
   }
+
+
   render() {
     const {transform, interval} = this.state;
     return (
@@ -84,6 +86,7 @@ class App extends Component {
                         graphic={serie.banner_url}
                         cardTitle = {serie.title}
                         tagTitle = {serie.tag}
+                        //avec switch case on peut dynamiquement afficher des couleurs des tags -> case APP : couleur jaune, case ASSET : couleur rouge etc
                         tagColor = {serie.tag}
                       />
                     ))}

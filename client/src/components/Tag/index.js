@@ -15,5 +15,5 @@ const useStyles = makeStyles({
 
 export default function Tag({label, color}) {
   const classes = useStyles();
-  return <Chip label={label} className={classes.chip} color={color}/>;
+  return <Chip label={label} className={classes.chip} style={color}/>;
 }

@@ -62,7 +62,7 @@ class CardCustom extends Component {
     return (
       <Card className={classes.card} >
         <Image imgUrl={graphic}/>
-        <Tag label={tagTitle} color={tagColor} />
+        <Tag label={tagTitle} style={tagColor} />
         <Title label={cardTitle}/>
       </Card>
     );
